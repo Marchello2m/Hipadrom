@@ -66,15 +66,6 @@ foreach ($end as $place => $runners ) {
 
     echo $place  . " place->  $runners  " . "\n";
 }
-function coefs($Horses)
-{
-    foreach ($Horses as $horse1)
-    {
-        return  $horse1->qf;
-    }
-}
-
-
 
 
 echo"_____________________________".PHP_EOL;
@@ -84,11 +75,9 @@ echo"_____________________________".PHP_EOL;
 
 if($selection===$end[0]){
 
-  //echo "You winn  . " . ($putmoney *  coefs($Horses)) .PHP_EOL;
-   echo "you winn    " .$putmoney * $QFC[0]  .PHP_EOL;
+   
+    echo "you winn    " .$putmoney * $QFC[0]  .PHP_EOL;
 
 }else{
-echo "You didnt winn ! ".PHP_EOL;
+    echo "You didnt winn ! ".PHP_EOL;
 }
-
-
